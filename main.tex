@@ -1,0 +1,26 @@
+\documentclass[a4j,12pt]{ltjtbook}
+
+\usepackage{lmodern}
+
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=rectangle,draw,rounded corners,inner sep=2pt] (char) {#1};}}
+
+\usepackage{verse}
+\newcommand{\vinsm}[1]{\vin{\tiny{\bf\circled{#1}}}}
+% \newcommand{\vinsm}[1]{\vin{\footnotesize{【#1】}}}
+
+\title{文言自學}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\fontsize{17pt}{22pt}\selectfont
+
+\tableofcontents
+
+\include{chapters/001-three-character-classic}
+
+\end{document}
